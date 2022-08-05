@@ -10,6 +10,7 @@ class SearchPlace {
 
     constructor() {
       
+      this.openDB();
       this.readDB();
     }
 
@@ -112,7 +113,7 @@ class SearchPlace {
     this.historial.unshift(location.toLocaleLowerCase() );
 
     // save database
-    this.saveDB
+    this.saveDB();
     
   }
   saveDB() {
